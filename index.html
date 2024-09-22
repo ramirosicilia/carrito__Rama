@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito Rama</title> 
+    <link rel="stylesheet" href="./styles/estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+</head>
+<body>  
+
+
+
+   <header class="header">  
+
+    <div class="contenedor">
+      <nav class="header__nav"> 
+ 
+        <div class="header__container-icon"> 
+        
+          <img class="header_icon" src="./iconos/call-center.png" alt="">
+          <img class="header_icon" src="./iconos/delivery-truck.png" alt="">
+          <img class="header_icon" src="./iconos/e-commerce.png" alt="">
+          <img class="header_icon" src="./iconos/piggy-bank.png" alt="">
+          <img class="header_icon" src="./iconos/shop.png" alt="">
+        
+        
+        </div>
+      
+        <a href="#" class="contenedor-carrito"> 
+          <i class="bi bi-cart4 carrito" >
+          <span class="numero" id="icon-cart">0</span>
+        
+        </i></a>
+     
+    </nav> 
+
+    <form action="" class="header__formulario" id="header-formulario">
+      <h2 class="titulo_Ecommerce">Ecommerce Rama</h2>  
+    
+ 
+      <div class="input__container">   
+        <input type="text" class="header__input" id="header-input" placeholder="Busca la Categoria">
+        <i class="bi bi-search lupa" id="lupa"></i> 
+
+ 
+
+        <select name="seleccionar" id="seleccionar" class="seleccionar select">
+          <option >Todos</option> 
+          <option value="remeras">Remeras</option> 
+          <option value="camperas">Camperas</option>
+          <option value="pantalon">Pantalones</option>
+          <option value="tapados">Tapados</option> 
+          <option value="vestidos">Vestidos</option> 
+          <option value="carteras">Carteras</option>
+        </select>  
+
+     
+      
+      </div>  
+      <input type="submit" value="buscar" class="input_enviar">
+
+      
+    </form>
+    </div>
+
+  
+  </header>
+ 
+  <main class="main"> 
+    
+    <div class="contenedor">
+
+      <section class="seccion__info" id="seccion-info"> 
+
+        <h1 class="seccion__titulo-info">"Estilo y elegancia en cada prenda. ¡Descubre tu look perfecto hoy!"</h1> 
+
+        <p class="seccion__parrafo-info">El e-commerce ha revolucionado la forma en que las empresas venden productos y servicios, permitiendo a los negocios llegar a clientes globales sin necesidad de una tienda física. A través de plataformas digitales, los compradores pueden explorar catálogos, comparar precios, leer reseñas y realizar compras desde cualquier lugar y en cualquier momento. Esta conveniencia es uno de los mayores atractivos para los clientes, quienes valoran la facilidad de compra y la entrega directa a sus hogares.
+
+          Para las empresas, el e-commerce ofrece la posibilidad de optimizar la gestión de inventarios, reducir costos operativos y mejorar la eficiencia en logística. La automatización de procesos, como la facturación y el envío, también contribuye a reducir gastos y errores. Además, las herramientas digitales permiten a las empresas analizar los hábitos de compra de los clientes y ofrecer experiencias personalizadas, lo que mejora la satisfacción del usuario y fomenta la lealtad a la marca.
+          
+          El marketing digital es otro de los grandes beneficios del e-commerce. A través de estrategias como redes sociales, SEO, publicidad pagada y email marketing, las empresas pueden llegar a audiencias más específicas y ajustar sus campañas en tiempo real. Esto permite una mayor flexibilidad y control sobre las promociones y ventas, generando mayores conversiones y retorno de inversión.
+          
+          Operar una tienda online es, además, más rentable que una tienda física, ya que no se requiere de un local ni de los gastos asociados a su mantenimiento. Los costos de entrada son más bajos, lo que permite a pequeñas empresas y emprendedores competir en el mercado. Por último, el e-commerce ofrece la ventaja de la escalabilidad, permitiendo a las empresas crecer sin las limitaciones físicas de una tienda tradicional, y adaptarse rápidamente a las necesidades y demandas del mercado.</p>
+
+      </section> 
+
+
+      <section class="carrito__compras"  id="carrito-compras">
+          
+        <!--completado en el JAVAS SCRIPT-->
+
+      </section> 
+
+      <section class="carrito__input" id="carrito-input">
+          
+        <!--completado en el JAVAS SCRIPT-->
+
+      </section> 
+
+    
+  
+
+      <section class="carrito__filtrado" id="carrito-filtrado">
+          
+        <!--completado en el JAVAS SCRIPT-->
+
+      </section> 
+
+    
+  
+        <section  class="overlay" id="overlay">  
+
+          
+              <span><i class="bi bi-file-excel-fill icon__overlay" id="icon-overlay"></i></span>
+          
+           
+            <article class="overlay__container">   
+
+              
+            </article> 
+
+            <div class="container__total">  
+
+              <div class="container__vacio">
+                <h2 class=" valor__total"></h2> 
+                <span class="vaci"><i class="bi bi-trash-fill icon__vaciar" id="vaciar">Vaciar Carrito</i></span>
+              </div>
+              <button type="button" class="comprar" id="comprar">Comprar</button>
+
+            </div>
+                       
+        </section>
+       
+
+
+    </div> 
+
+  </main>
+ 
+
+
+
+
+<script src="./js/Busqueda.js"></script> 
+<script type="module" src="./js/Seleccion.js"></script>  
+<script type="module" src="./js/InputBusqueda.js"></script> 
+<script type="module" src="./js/carrito.js"></script> 
+<script type="module" src="./js/ActualizarBoton.js"></script>
+<script type="module" src="./js/ActivarBotones.js"></script>
+<script type="module" src="./js/AgregarCarrito.js"></script>
+<script type="module" src="./js/EliminarCarrito.js"></script> 
+<script src="./js/Comprar.js"></script> 
+<script type="module" src="./js/VaciarCarrito.js"></script> 
+<script type="module" src="./js/musica.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
+  
+</body>
+</html>

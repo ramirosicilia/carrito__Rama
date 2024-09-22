@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+} 
+html{
+    font-size: 62.5%;
+} 
+
+
+body{
+    width: 100%;
+    height: 100vh;
+   background: linear-gradient(135deg, #f7d5ca,#fdddd3, #ebe7e8c2 );
+
+}  
+/* Personalizar el contenedor del scrollbar */
+::-webkit-scrollbar {
+    width: 12px; /* Ancho del scrollbar */
+    height: 12px; /* Altura del scrollbar horizontal */
+}
+
+/* Personalizar el pulgar (thumb) */
+::-webkit-scrollbar-thumb {
+    background-color:rgb(255, 0, 200); /* Color del pulgar */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 3px solid #ffffff; /* Añadir un borde alrededor */
+}
+
+/* Personalizar el fondo de la pista del scrollbar */
+::-webkit-scrollbar-track {
+    background-color: #e0e0e0; /* Color del track */
+    border-radius: 10px;
+}
+
+/* Opcional: Estilo al pasar el ratón sobre el scrollbar */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #ec4fe5; /* Color al pasar el mouse */
+}
+
+/* Opcional: Estilo al hacer clic */
+
+
+.contenedor{
+    width: 90%;
+    max-width: 90%; 
+    padding: 4rem 0px;
+    margin: auto;
+}
+
+.carrito{
+    font-size: 6rem;
+    color: #ffff; 
+    border: 1 px solid hsl(240, 92%, 60%);
+    position: relative;
+} 
+.contenedor-carrito{
+    background-color: #b3a7a7;
+    padding: 2rem;
+    border-radius: 50%;
+    box-shadow: 2px 4px 4px #1a1919 ; 
+
+}  
+
+
+
+ .header__nav{
+    width: 100%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .header__container-icon{
+   display: flex;
+   gap: 2rem; 
+  
+ 
+
+ } 
+
+ 
+
+ .header_icon{
+    width: 3%;
+
+ } 
+
+
+
+ 
+
+.numero{ 
+    position: absolute; 
+    top: 15px;
+    left: 23px; 
+    font-size: 3rem;
+    border-radius: 50%;
+    font-weight: bolder;
+   color: #000;
+    padding: .1rem;
+    font-size: 2.5rem;
+  
+} 
+
+.header__formulario{ 
+
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+}  
+
+.titulo_Ecommerce{
+    font-family: "Sevillana", cursive;
+    font-weight: 500;
+    font-size: 5rem; 
+     letter-spacing: 4px;
+     line-height: 1.5;
+    font-style: normal;
+}
+
+.header__input {
+    width: 65%; /* El input ocupa todo el ancho del contenedor */
+    padding: 1.5rem 10rem; /* Espacio ajustado para dejar lugar a la lupa y el select */
+    border-radius: 1rem;
+    border: 1px solid #ccc; 
+    text-align: center;
+    font-size: 1.6rem;
+  
+
+}
+
+.input__container {
+    position: relative;
+    width: 100%; /* Asegura que el contenedor ocupe el 100% del espacio disponible */ 
+    margin: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.lupa {
+    font-size: 2rem;
+    position: absolute; 
+    top: 50%;
+    left: 20%; /* Alinea a la izquierda */ 
+    transform: translateX(-20%);
+    transform: translateY(-50%); /* Centra verticalmente la lupa */
+    color: #666; /* Opcional: estilo para la lupa */
+}
+
+.seleccionar {
+    position: absolute;
+    top: 50%;
+    right: 20%; /* Alinea a la izquierda */ 
+    transform: translateX(-20%);
+    transform: translateY(-50%); /* Centra verticalmente la lupa */
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    background-color: #f3e9e9;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+    font-weight: 500;
+    color: #333; /* Ajuste opcional para el texto */
+}
+
+.input_enviar {  
+    background-color: #fff;
+    padding: 1rem 10rem; 
+    font-size: 2rem;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 1rem; /* Asegura un espacio entre el input y el botón de enviar */
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1); /* Estilo adicional */
+}
+
+
+
+.seccion__info{
+    font-family: "Sevillana", cursive;
+   display: flex; 
+   flex-direction: column; 
+   justify-content: flex-end; 
+   align-items: center; 
+   padding: 3rem 0px;
+   gap: 3rem; 
+} 
+.main{
+   width:100%;
+}
+
+.seccion__titulo-info{
+    font-size: 4rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+} 
+
+.seccion__parrafo-info{
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    color: #070707;
+} 
+
+
+
+/*============================================================================================*/ 
+
+/*CARRITO*/   
+
+
+
+.carrito__compras, .carrito__filtrado ,.carrito__input{
+    width: 100%; 
+    height: auto;
+    padding: 3rem 0px;
+    display: none; 
+    grid-template-columns: repeat(3 , 1fr); 
+    grid-template-rows: max-content; 
+    justify-content: center;
+    align-items: center;
+   
+} 
+
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 0px;
+} 
+
+
+
+
+.imagenes__tarjeta{
+    width: 30rem;
+    height: 30rem;
+    border-radius: 2rem;
+} 
+
+.titulo__tarjeta{ 
+    font-size: 3rem;
+
+
+} 
+
+.color__tarjeta{ 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.7rem; 
+    letter-spacing: .5px; 
+    align-self: flex-start;
+    padding-left: 7rem;
+
+} 
+
+.precio{ 
+    font-size: 1.7rem;
+    color: rgb(12, 2, 11); 
+    font-weight: bolder;
+   
+
+} 
+
+.botones__agregar{
+    padding: 1rem 6rem;
+    border: none; 
+    border-radius: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+    font-size: 1.5rem; 
+    font-weight: 800;
+    background-color: rgb(255, 0, 200);
+    color: aliceblue;
+} 
+
+.centrado{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estado inicial (oculto) */
+.overlay {
+    width: 50%;
+    min-height: 30rem;
+    max-height: 60rem;
+    background-color: hsl(0, 2%, 10%);
+    z-index: 3344;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2rem;
+    display: block; /* Siempre block, controlaremos la visibilidad con opacity */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 1rem;
+    opacity: 0; /* Inicio en invisible */
+    visibility: hidden; /* Inicio en oculto */
+    transition: opacity 0.8s linear, visibility 0s 0.8s; /* Espera 0.8s para cambiar la visibilidad */
+}
+
+/* Estado visible (cuando el overlay está activo) */
+.active {
+    opacity: 1; /* Visible */
+    visibility: visible; /* Hacerlo visible */
+    transition: opacity 0.8s linear, visibility 0s; /* Transición solo en opacidad */
+}
+
+
+.overlay__container{
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    color: #f3e9e9;
+    letter-spacing: 2px;
+    font-size: 3.5rem; 
+
+    
+}  
+
+
+
+.overlay__flex{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; 
+    align-items: center;
+}
+
+
+
+.overlay__botones{
+    display: flex; 
+    gap: 2rem; 
+} 
+
+.boton__sumar{
+    background-color: rgb(121, 68, 172); 
+    padding: 1rem 4rem; 
+    border: none; 
+    border-radius: 3rem;
+    color: #f3e9e9;
+}  
+
+.eliminar__boton{
+    background-color: rgb(190, 27, 27); 
+    padding: .5rem 2rem; 
+    border: none; 
+    border-radius: 3rem;
+    color: #f3e9e9;
+} 
+
+
+.icon__overlay{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 3.5rem; 
+    filter: invert(1);
+    z-index: 9999999999999999999999999999999;
+
+} 
+
+.agregar__boton{ 
+    background-color: rgb(121, 68, 172); 
+    padding: .5rem 2rem; 
+    border: none; 
+    border-radius: 3rem;
+    color: #f3e9e9;
+
+}
+
+
+.comprar{
+    text-decoration: none; 
+    padding: 1rem 4rem; 
+    border: none; 
+    border-radius: 3rem; 
+    background-color: rgb(121, 68, 172); 
+    font-size: 2rem;
+    color: #f3e9e9;
+    text-align: center;
+} 
+
+
+
+.imagen__nombre{ 
+    color: #f3e9e9;
+    font-size: 2rem;
+
+}
+
+.imagen__producto{ 
+    border-radius: 20%;
+    max-width: 20rem !important;
+    width: 15rem; 
+    height: 15rem;
+} 
+
+.imagen__precio{
+    color: #f3e9e9;
+    font-size: 2rem;
+} 
+
+.cantidad, .stock{
+    color: #f3e9e9;
+    font-size: 2rem;
+
+} 
+
+.valor__total{ 
+    color: #f3e9e9;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    
+}
+
+.overlay__tarjeta-1{ 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    gap: 2rem; 
+    position: relative; 
+    padding: 1rem ; 
+
+}  
+
+.overlay__tarjeta-1::before {
+    content: "AGOTADO";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #a57dd359;
+    transform: scale(0); 
+    font-weight: bolder;
+    transition: transform 1s;
+    color: #db0000; 
+    display: flex; 
+    padding: 1rem ; 
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--escritura2);
+    font-size: 4rem;
+  }
+  
+  .overlay__tarjeta-1.active::before {
+    transform: scale(1) rotate(360deg); 
+    
+  }
+  
+
+
+
+
+.overlay__tarjeta-2{ 
+    display: flex; 
+    height: 8rem;
+    flex-direction: column; 
+    justify-content:center;
+    align-items: center; 
+    gap: 6rem;
+
+}
+
+.valor{ 
+    color: #f3e9e9;
+    font-size: 2rem;
+
+} 
+
+.contenedor__botonera{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+} 
+
+.container__total{
+    display: flex;
+    padding-top: 4rem; 
+    justify-content: center; 
+    align-items: center;
+    gap: 10rem;
+
+} 
+
+
+
+.icon__vaciar{
+   
+    font-size: 3rem; 
+    color: #ffffff;
+} 
+
+.container__vacio{
+    display: grid; 
+    place-content: center;
+    gap: 1rem;
+} 
+
+
+
+.vaci{
+    font-size: 1rem; 
+    color: #ffffff;
+    padding-left: 2rem;
+} 
+
+.vaci:hover{
+    background-color: #ec4fe5; 
+    padding: .8rem 5rem; 
+    border-radius: 3rem;
+}    
+
+.boton__disabled{
+    background-color: #ca4949 !important; 
+    opacity: .4;
+    padding: .5rem 2rem; 
+    border: none; 
+    border-radius: 3rem; 
+    color: #e0e0e0;
+
+}

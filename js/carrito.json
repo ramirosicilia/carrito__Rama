@@ -1,0 +1,193 @@
+
+[
+    {
+        "nombre":"cartera Gris Louis Vuitton",
+        "imagen":"./imagenes/mujer-cartera-azul.jpeg",
+        "categoria":"carteras",
+        "stock":10, 
+        "precio":1000,
+        "color":"azul"
+    }, 
+
+    {
+        "nombre":"cartera hermes",
+        "imagen":"./imagenes/cartera-hermes.jpeg",
+        "categoria":"carteras",
+        "stock":6, 
+        "precio":1000,
+        "color":"Marron"
+    }, 
+
+    {
+        "nombre":"Campera Maydane", 
+        "imagen":"./imagenes/chica-campera-marron.jpeg",
+        "categoria":"camperas",
+        "stock":4,
+        "precio":1000,
+        "color":"bordo"
+    },  
+
+    {
+        "nombre":"cartera Gucci", 
+        "imagen":"./imagenes/chica-cartera-gucci.jpeg" ,
+        "categoria":"carteras",
+        "stock":6,
+        "precio":1000,
+        "color":"Marron"
+    },  
+
+    {
+        "nombre":"cartera Gris Louis Vuitton", 
+        "imagen":"./imagenes/chica-cartera-louis-button.jpeg",
+        "categoria":"carteras",
+        "stock":14,
+        "precio":1000,
+        "color":"Marron"
+    }, 
+
+    {
+        "nombre":"jean las locas", 
+        "imagen":"./imagenes/chica-jean-mujer-cortado.jpeg",
+        "categoria":"pantalon",
+        "stock":4,
+        "precio":1000,
+        "color":"gris"
+    },  
+
+
+    {
+        "nombre":"muscula naranja", 
+        "imagen":"./imagenes/chica-musculosa-naranja.jpeg",
+        "categoria":"remeras",
+        "stock":10,
+        "precio":1000,
+        "color":"naranja"
+    },  
+
+    {
+        "nombre":"pantalon margarita", 
+        "imagen":"./imagenes/chica-pantalon-blanco.jpeg",
+        "categoria":"pantalon",
+        "stock":14,
+        "precio":1000,
+        "color":"blanco"
+    }, 
+
+    {
+        "nombre":"pantalon rosa las Locas",
+         "imagen":"./imagenes/chica-pantalon-rosa.jpeg",
+         "categoria":"pantalon",
+         "stock":5, 
+         "precio":1000,
+         "color":"rosa"
+    }, 
+
+    {
+        "nombre":"pantalon verde Diosas",
+         "imagen":"./imagenes/chica-pantalon-verde.jpeg" ,
+         "categoria":"pantalon",
+         "stock":15,
+         "precio":1000,
+         "color":"rosa"
+    }, 
+
+    {
+        "nombre":" pantalon Fashion",
+         "imagen":"./imagenes/pantalon-fashion.jpeg" ,
+         "categoria":"pantalon",
+         "stock":7,
+         "precio":1000,
+         "color":"celeste"
+    }, 
+
+    {
+        "nombre":"remera rosada Yagmour",
+         "imagen":"./imagenes/remerita-rosa.jpeg" ,
+         "categoria":"remeras",
+         "stock":3,
+         "precio":1000,
+         "color":"rosa"
+    }, 
+
+    {
+        "nombre":"vestido Massimo Dutt",
+         "imagen":"./imagenes/chica-vestido-Amarillo.jpeg",
+         "categoria":"vestidos",
+         "stock":8,
+         "precio":1000,
+         "color":"amarillo"
+    }, 
+
+    {
+        "nombre":"vestido Ted Baker",
+         "imagen":"./imagenes/chica-vestido-azul.jpeg" ,
+         "categoria":"vestidos",
+         "stock":12,
+         "precio":1000,
+         "color":"azul"
+    }, 
+
+    {
+        "nombre":"vestido Mango",
+         "imagen":"./imagenes/chica-vestido-cuadros.jpeg" ,
+         "categoria":"vestidos",
+         "stock":12,
+         "precio":1000,
+         "color":"bordo"
+    }, 
+
+    {
+        "nombre":"vestido  Cortefiel",
+         "imagen":"./imagenes/chica-vestido-rosa.jpeg",
+         "categoria":"vestidos",
+         "stock":16,
+         "precio":1000,
+         "color":"rosa"
+    }, 
+
+    {
+        "nombre":"campera Montagne",
+         "imagen":"./imagenes/chica_campera-negra.jpeg",
+         "categoria":"camperas",
+         "stock":12,
+         "precio":1000,
+         "color":"negra"
+    },  
+
+    {
+        "nombre":"tapado Marias",
+         "imagen":"./imagenes/imagen mujer tapado_Negro.png",
+         "categoria":"tapados",
+         "stock":9,
+         "precio":1000,
+         "color":"negro"
+    }, 
+
+    {
+        "nombre":"tapado Cat",
+         "imagen":"./imagenes/imagen mujer tapado_Marron.png",
+         "categoria":"tapados",
+         "stock":3,
+         "precio":1000,
+         "color":"marron"
+    }, 
+
+    {
+        "nombre":"musculosa lila Diosas",
+         "imagen":"./imagenes/remera-lila.jpeg",
+         "categoria":"remeras",
+         "stock":13,
+         "precio":1000,
+         "color":"lila"
+    }, 
+
+    {
+        "nombre":"pantalon corto Leggins",
+         "imagen":"./imagenes/pantalon-corto-verano.jpeg" ,
+         "categoria":"pantalon",
+         "stock":3,
+         "precio":1000,
+         "color":"floreado"
+    } 
+
+]
